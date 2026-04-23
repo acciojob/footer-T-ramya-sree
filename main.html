@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Company Footer</title>
+<title>Footer Layout</title>
 
 <style>
   body {
@@ -10,66 +10,58 @@
     font-family: Arial, sans-serif;
   }
 
-  /* FOOTER */
   footer {
-    background-color: #1e1e1e;
+    background: #222;
     color: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
 
-  .footer-container {
+  /* REQUIRED CONTAINER */
+  .link-boxes {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+    flex-wrap: wrap;
   }
 
-  .footer-section {
-    flex: 1 1 180px;
+  .box {
+    flex: 1 1 150px;
+    margin: 10px;
   }
 
-  .footer-section h3 {
-    margin-bottom: 15px;
+  .box h3 {
+    margin-bottom: 10px;
     color: #ffcc00;
   }
 
-  .footer-section a {
+  .box a {
     display: block;
-    color: #ccc;
+    color: #bbb;
     text-decoration: none;
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin: 5px 0;
   }
 
-  .footer-section a:hover {
+  .box a:hover {
     color: white;
   }
 
-  /* Contact number styling */
-  .contact-number {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-
-  /* Media Icons */
+  /* Media icons */
   .media-icons {
     display: flex;
     gap: 10px;
     margin-top: 10px;
   }
 
-  .media-icons div {
-    width: 30px;
-    height: 30px;
-    background: #333;
+  .media-icons a {
+    width: 25px;
+    height: 25px;
+    background: gray;
     border-radius: 50%;
+    display: inline-block;
   }
 
   /* Responsive */
   @media (max-width: 600px) {
-    .footer-container {
+    .link-boxes {
       flex-direction: column;
     }
   }
@@ -79,60 +71,50 @@
 <body>
 
 <footer>
-  <div class="footer-container">
 
-    <!-- Home -->
-    <div class="footer-section">
+  <div class="link-boxes">
+
+    <div class="box">
       <h3>Home</h3>
-      <a href="#">Dashboard</a>
-      <a href="#">Features</a>
-      <a href="#">Updates</a>
-    </div>
-
-    <!-- About -->
-    <div class="footer-section">
-      <h3>About</h3>
-      <a href="#">Company Info</a>
-      <a href="#">Team</a>
-      <a href="#">Careers</a>
-    </div>
-
-    <!-- Links -->
-    <div class="footer-section">
-      <h3>Links</h3>
       <a href="#">Home Page</a>
-      <a href="#">About Page</a>
-      <a href="#">Blog</a>
-      <a href="#">Support</a>
     </div>
 
-    <!-- Services -->
-    <div class="footer-section">
+    <div class="box">
+      <h3>About</h3>
+      <a href="#">About Page</a>
+    </div>
+
+    <div class="box">
+      <h3>Links</h3>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">More Pages</a>
+    </div>
+
+    <div class="box">
       <h3>Services</h3>
       <a href="#">Web Development</a>
       <a href="#">App Development</a>
-      <a href="#">UI/UX Design</a>
+      <a href="#">Design</a>
     </div>
 
-    <!-- Contact -->
-    <div class="footer-section">
+    <div class="box">
       <h3>Contact</h3>
-      <a href="#">Email Us</a>
-      <a href="#">Help Center</a>
-      <div class="contact-number">8879887262</div>
+      <a href="#">8879887262</a>
 
       <div class="media-icons">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
       </div>
 
-      <a href="#">Social Media Page</a>
+      <a href="#">Social Media</a>
     </div>
 
   </div>
+
 </footer>
 
 </body>
